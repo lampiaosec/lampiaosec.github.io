@@ -1,0 +1,8 @@
+
+We are a group of security research, our intent is to learn more and more about 
+the area, publish our results and not forgetting to help the free software 
+community and fight for a world without supervision.
+
+We believe that the world can and should be free and if the hacking is the 
+method to do this, then we will hack it :)
+

@@ -1,4 +1,0 @@
-
-[+] virgulino - steganography
-[+] jackthestripper - MITM Attack
-

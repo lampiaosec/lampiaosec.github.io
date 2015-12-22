@@ -11,5 +11,5 @@ Quickly, our website. Our welcome card.
 * Because we like Gnu/Linux.
 * Because we like CLI.
 * Because ascii is so cool.
-* And mainly: because none of us is good design.
+* And mainly: because none of us are good designer.
  

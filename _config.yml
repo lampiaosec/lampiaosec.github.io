@@ -1,0 +1,24 @@
+# Site specific settings
+title: "LampiãoSec :: Research Security Group"
+name: "LampiãoSec"
+keywords: "Security, Hacking"
+baseurl: ""
+url: "https://lampiaoseci.github.io"
+description: "Research Security Group"
+cover: "/assets/img/cover.svg"
+fanpage_id: "688484114615664"
+
+# Site general settings
+lang: "en"
+lang_alternate: "pt_BR"
+
+# Media
+disqus: gjuniioor
+twitter: 
+facebook: "lampiaosec"
+github: "lampiaosec"
+google:
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/

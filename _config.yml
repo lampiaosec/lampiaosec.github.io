@@ -3,7 +3,7 @@ title: "LampiãoSec :: Research Security Group"
 name: "LampiãoSec"
 keywords: "Security, Hacking"
 baseurl: ""
-url: "https://lampiaoseci.github.io"
+url: "https://lampiaosec.github.io"
 description: "Research Security Group"
 cover: "/assets/img/cover.svg"
 fanpage_id: "688484114615664"
@@ -13,7 +13,7 @@ lang: "en"
 lang_alternate: "pt_BR"
 
 # Media
-disqus: gjuniioor
+disqus: lampiaosec
 twitter: 
 facebook: "lampiaosec"
 github: "lampiaosec"

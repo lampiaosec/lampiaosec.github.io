@@ -14,7 +14,7 @@ body {
 	font-family: "Open Sans";
 }
 
-header, nav, main {
+header, nav, main, footer {
 	margin: 15px;
 	border-bottom: 1px dashed rgba(255,255,255,0.5);
 }
@@ -57,6 +57,10 @@ a {
 	font-weight: bold;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 pre {
 	font-family: monospace;
 }
@@ -67,7 +71,7 @@ pre {
 	background-color: #0D0D0D;
 }
 
-img {
+img, main iframe {
 	width: 80%;
 	margin-left: 10%;
 	border: 1px dashed rgba(255,255,255,0.5);

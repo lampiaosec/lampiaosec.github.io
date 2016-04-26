@@ -37,69 +37,67 @@ IRC:
 # $ cat team.txt
 {:id="team"}
 
-[+] gjuniioor
-
-> gjuniioor[at]protonmail[dot]ch
-
-> [https://github.com/gjuniioor](https://github.com/gjuniioor)
-
-> [https://gjuniioor.github.io](https://gjuniioor.github.io)
-
-[+] keso
-
-> ricardokeso[at]ricardokeso[dot]com
-
-> [https://github.com/ricardokeso](https://github.com/ricardokeso)
-
-> [http://www.ricardokeso.com](http://www.ricardokeso.com)
-
-[+] userx
-
-> user_x[at]riseup[dot]net
-
-> [https://github.com/UserXGnu](https://github.com/UserXGnu)
-
-> [https://userxgnu.github.io](https://userxgnu.github.io)
+<ul>
+{% for member in site.categories.team reversed %}
+<li>{{ member.nick }}
+<ul>
+<li>{{ member.mail }}</li>
+<li><a href="https://github.com/{{ member.github }}">https://github.com/{{ member.github }}</a></li>
+<li><a href="{{ member.site }}">{{ member.site }}</a></li>
+</ul>
+</li>
+{% endfor %}
+</ul>
 
 # $ cat projects.txt
 {:id="projects"}
 
-[+] [Virada Hacker](https://lampiaosec.github.io/virada-hacker/) - a night to code, hack and drink
+<ul>
+{% for project in site.categories.projects %}
+<li><a href="{{ project.link }}">{{ project.title }}</a> - {{ project.description }}</li>
+{% endfor %}
+</ul>
 
 # $ cat tools.txt
 {:id="tools"}
 
-[+] [virgulino](https://github.com/lampiaosec/virgulino) - steganography
-
-[+] [jackthestripper](https://github.com/lampiaosec/jackthestripper) - MITM Attack
+<ul>
+{% for tool in site.categories.tools %}
+<li><a href="{{ tool.link }}">{{ tool.title }}</a> - {{ tool.description }}</li>
+{% endfor %}
+</ul>
 
 # $ cat talks.txt
 {:id="talks"}
 
-[+] Crypto [+]
-
-> [Crypto Basic](http://lampiaosec.github.io/talks/Cripto/index.html) at Virada Hacker
-
-[+] Network [+]
-
-> [DNS](https://lampiaosec.github.io/talks/DNS-o-que-voce-precisa-saber/index.html) at Virada Hacker
-
-[+] Privacy [+]
-    
-> ["SI e Privacidade"](https://gjuniioor.github.io/talks/seguranca-da-informacao-privacidade/) at Semana CTS
+<ul>
+{% for talk in site.categories.talks %}
+<li><a href="{{ talk.link }}" title="{{ talk.description }}">{{ talk.title }}</a> at {{ talk.where }}</li>
+{% endfor %}
+</ul>
 
 # $ cat posts.txt
 {:id="posts"}
 
-> GnuPG - [Pt_br](https://gjuniioor.github.io/blog/gnupg/)
-
+<ul>
 {% for post in site.categories.posts %}
-* [{{ post.title }}]({{ post.url }})
+
+{% if post.en %}
+<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+{% endif %}
+
 {% endfor %}
+</ul>
 
 # $ cat articles.txt
 {:id="articles"}
 
-{% for article in site.categories.articles %}
-* [{{ post.article }}]({{ post.article }})
+<ul>
+{% for post in site.categories.articles %}
+
+{% if post.en %}
+<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+{% endif %}
+
 {% endfor %}
+</ul>

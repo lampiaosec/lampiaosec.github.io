@@ -76,3 +76,9 @@ img, main iframe {
 	margin-left: 10%;
 	border: 1px dashed rgba(255,255,255,0.5);
 }
+
+main header {
+	text-align: center;
+	padding-bottom: 15px;
+	border: 0;
+}

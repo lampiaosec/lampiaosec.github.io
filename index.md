@@ -39,7 +39,7 @@ IRC:
 
 <ul>
 {% for member in site.categories.team reversed %}
-<li>{{ member.title }}
+<li id="{{ member.title }}">{{ member.title }}
 <ul>
 <li>{{ member.mail }}</li>
 <li><a href="https://github.com/{{ member.github }}">https://github.com/{{ member.github }}</a></li>

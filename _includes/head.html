@@ -15,7 +15,7 @@
 
 <!-- Good information about this page -->
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="keywords" content="{{ site.keywords }}{% if page.keywords %}{{ page.keywords }}{% endif %}">
+<meta name="keywords" content="{{ site.keywords }}{% if page.keywords %}, {{ page.keywords }}{% endif %}">
 <meta name="author" content="{{ site.name }}">
 
 <!-- Feed links -->

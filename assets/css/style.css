@@ -65,6 +65,14 @@ pre {
 	font-family: monospace;
 }
 
+.highlighter-rouge {
+	color: rgba(255,255,255,0.4);
+}
+
+.highlight {
+	color: rgba(255,255,255,0.7);
+}
+
 .highlight {
 	border: 1px dashed rgba(255,255,255,0.3);
 	padding: 15px;

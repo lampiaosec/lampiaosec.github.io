@@ -90,3 +90,9 @@ main header {
 	padding-bottom: 15px;
 	border: 0;
 }
+
+.imghalf {
+	width: 50%;
+	margin-left: 25%;
+	border: 1px dashed rgba(255,255,255,0.5);
+}

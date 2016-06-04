@@ -31,7 +31,7 @@ On [#ViradaHacker][virada-hacker] on the first day of April was [descrybed a way
 ## Motivation
 {:id="motivation"}
 
-To show and to help you understand how the solution was thinking is important, both, for those who are stating on this matter, once that this way they start to see how the process was thought and stuff like that, and for the community itself, once that it's one how-to less creating *facebook hackers* around.
+To show and to help you understand how the solution was thought is important, both, for those who are stating on this matter, once that this way they start to see how the process was thought and stuff like that, and for the community itself, once that it's one how-to less creating *facebook hackers* around.
 
 ## The Issue
 
